@@ -1,0 +1,79 @@
+<!-------w------------
+
+    Assignment 4
+    Name: Marco Juyo
+    Date: February 1st, 2024
+    Description: HTML for Open Data Assignment
+
+--------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500&family=Poppins:wght@200;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="main.css" />
+		<title>Gotopark</title>
+	</head>
+	<body>
+		<section class="section"> 
+			<div class="container"> 
+				<header> 
+					<h1 class="title">Parks and Open Spaces of Winnipeg</h1> 
+					<h2 class="subtitle">Search the parks and open spaces on the City of Winnipeg.</h2> 
+				</header> 
+				<br> 
+				<form class="search-form">
+					<div class="text-logo">
+						<p>Gotopark</p>
+					</div>
+					<div class="radio-buttons">
+						<div class="input-radio">
+						    <input class="radio" id="radio-name" type="radio" name="search-type" value="parkname" checked>
+						    <label for="radio-name" class="label">Search by Name</label>
+						</div>
+						<div class="input-radio">
+						    <input class="radio" id="radio-neighbourhood" type="radio" name="search-type" value="neighbourhood">
+						    <label for="radio-neighbourhood" class="label">Search by Neighbourhood</label>
+						</div>
+					</div>
+					<div class="input-field">
+						<input class="input" name="search-value" id="search-value" autofocus placeholder="Try searching for Assiniboine, Tuxedo or Wolseley."> 
+					</div>
+					<div class="buttons">
+						<button class="primary" type="submit">Search</button>
+						<button class="secondary" type="reset">Clear</button>
+					</div>
+				</form> 
+				<br>
+				<h2 class="results"></h2> 
+				<br> 
+				<table class="table"> 
+					<thead> 
+						<tr> 
+							<th>Park Name</th> 
+							<th>Neighbourhood</th> 
+							<th>Location</th> 
+							<th>Area in Hectares</th> 
+						</tr> 
+					</thead> 
+					<tbody>  
+					</tbody> 
+				</table>
+				<footer>
+					<p> Data provided by the <a href="https://data.winnipeg.ca/">City of Winnipeg Open Data catalogue</a>. </p> 
+					<p>by Marco J.</p>
+				</footer> 
+			</div> 
+		</section> 
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+
+ 
