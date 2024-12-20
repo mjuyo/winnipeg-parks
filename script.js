@@ -12,7 +12,7 @@ function fetchData(searchTerm, fieldName) {
 
         const apiUrl = 'https://data.winnipeg.ca/resource/tx3d-pfxq.json?' +
                         `$where=lower(${fieldName}) LIKE lower('%${searchTerm}%')` + 
-                        '&$order=area_in_hectares DESC' +
+                        '&$order=land_area_in_hectares DESC' +
                         '&$limit=100';
         const encodedURL = encodeURI(apiUrl);
 
@@ -66,7 +66,7 @@ function updateResultsTable(parks, searchTerm) {
             parkNameTd.innerHTML = park.park_name;
             neighbourhoodTd.innerHTML = park.neighbourhood;
             locationTd.innerHTML = park.location_description;
-            areaTd.innerHTML = park.area_in_hectares;
+            areaTd.innerHTML = park.land_area_in_hectares;
 
             row.appendChild(parkNameTd);
             row.appendChild(neighbourhoodTd);
